@@ -1,8 +1,9 @@
 import "../styles/scss/borderGradiant.scss"
 const BorderGradiant = () => {
   return (
-    <div class="parent">
-
+    <div className="parent">
+      <div className="backgroundGradiant"></div>
+      <div className="borderImage"></div>
     </div>
   )
 }
