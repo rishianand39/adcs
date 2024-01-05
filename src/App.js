@@ -4,7 +4,9 @@ import SinCos from './components/sincos';
 
 function App() {
   return (
-    <SinCos />
+    <>
+   
+    </>
   );
 }
 
