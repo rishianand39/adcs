@@ -30,7 +30,8 @@ border-radius: 50%;
 position: relative;
 left: 50%;
 right: 50%;
-top:20vh;
+// top:20vh;
+margin:100px 0;
 
 `
 export const Circle = styled.div`
@@ -44,7 +45,7 @@ border-radius: 50%;
 position: absolute;
 left: calc(var(--size) / 2 / 2);
 top:  calc(var(--size) / 2 / 2);
---radius:150px;
+--radius:100px;
 &:nth-child(1){
   --degree: 45deg;
   transform: 
@@ -68,6 +69,7 @@ top:  calc(var(--size) / 2 / 2);
     calc(cos(var(--degree)) * var(--radius)),
     calc(sin(var(--degree) ) * var(--radius))
     );
+
 }
 &:nth-child(4){
   --degree:180deg;
@@ -110,3 +112,63 @@ top:  calc(var(--size) / 2 / 2);
     );
 }
 `
+export const Box = styled.div`
+display:flex;
+gap:5px;
+background-color:#fff;
+border:1px solid red;
+padding:20px;
+position:relative;
+`
+export const BoxContainer =styled.div`
+border:1px solid green;
+padding:20px;
+position:relative;
+`
+
+export const ChildBox = styled.div`
+height:50px;
+width:50px;
+position:absolute;
+&:nth-child(1){
+  background-color:pink;
+  left:15px;
+  z-index:1;
+}
+&:nth-child(2){
+  background-color:blue;
+  left:35px;
+
+}
+&:nth-child(3){
+  background-color:green;
+  left:65px;
+}
+&:nth-child(4){
+  background-color:teal;
+  left:85px;
+}
+&:nth-child(5){
+  background-color:yellow;
+  left:105px;
+  z-index:1;
+
+}
+&:nth-child(6){
+  background-color:black;
+  left:125px;
+}
+&:nth-child(7){
+  background-color:brown;
+  left:150px;
+  z-index:1;
+
+}
+&:nth-child(8){
+  background-color:orange;
+  left:180px;
+}
+`
+
+
+

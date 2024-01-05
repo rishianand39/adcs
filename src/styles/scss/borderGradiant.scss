@@ -1,0 +1,29 @@
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    .backgroundGradiant {
+        max-width: 250px;
+        box-sizing: border-box;
+        padding: 1rem;
+        position: relative;
+        background: linear-gradient(to left, red, purple);
+        padding: 3px;
+        width: 300px;
+        aspect-ratio: 1/1;
+        display: flex;
+    }
+    .borderImage {
+        width: 300px;
+        aspect-ratio: 1/1;
+        box-sizing: border-box;
+        padding: 1rem;
+        color: white;
+        border-width: 3px;
+        border-style: solid;
+        border-image:
+            linear-gradient(to bottom,
+                red,
+                rgba(0, 0, 0, 0)) 1 100%;
+    }
+}
